@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<info>
+    <id>extendedapi</id>
+    <name>Extended Api</name>
+    <description></description>
+    <licence>agpl</licence>
+    <author>Steffen Lindner</author>
+    <version>0.0.1</version>
+    <require>6.0.3</require>
+</info>
