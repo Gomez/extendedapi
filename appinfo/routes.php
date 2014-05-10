@@ -9,19 +9,9 @@
  * @copyright Steffen Lindner 2014
  */
 
-namespace OCA\ExtendedApi\AppInfo;
+// register an ocs api call
+OCP\API::register('get', '/cloud/userdata/{userid}', array('OC_Extended_API_Users', 'getUser'), 'extendedapi', OC_API::USER_AUTH);
+OCP\API::register('put', '/cloud/userdata/{userid}', array('OC_Extended_API_Users', 'editUser'), 'extendedapi', OC_API::USER_AUTH);
 
-/**
- * Create your routes in here. The name is the lowercase name of the controller
- * without the controller part, the stuff after the hash is the method.
- * e.g. page#index -> PageController->index()
- *
- * The controller class has to be registered in the application.php file since
- * it's instantiated in there
- */
-$application = new Application();
 
-$application->registerRoutes($this, array('routes' => array(
-	array('name' => 'page#index', 'url' => '/', 'verb' => 'GET'),
-    array('name' => 'page#do_echo', 'url' => '/echo', 'verb' => 'POST'),
-)));
+#OCP\API::register('get', '/cloud/activity', array('OCA\Activity\OCS', 'getActivities'), 'activity', OC_API::ADMIN_AUTH);

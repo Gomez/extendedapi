@@ -6,5 +6,6 @@
     <licence>agpl</licence>
     <author>Steffen Lindner</author>
     <version>0.0.1</version>
+    <shipped>true</shipped>
     <require>6.0.3</require>
 </info>
