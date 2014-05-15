@@ -7,5 +7,6 @@
     <author>Steffen Lindner</author>
     <version>0.0.1</version>
     <shipped>true</shipped>
+    <default_enable/>
     <require>6.0.3</require>
 </info>
