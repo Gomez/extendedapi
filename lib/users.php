@@ -74,7 +74,8 @@ class OC_Extended_API_Users {
             return new OC_OCS_Result(null, 997);
         }
         // Check if permitted to edit this field
-        $param_key = array_keys($parameters['_put'])[0];
+        $param_key_raw = array_keys($parameters['_put']);
+        $param_key = $param_key_raw[0];
         $param_value = $parameters['_put'][$param_key];
         if(!in_array($param_key, $permittedfields)) {
             return new OC_OCS_Result(null, 997);
